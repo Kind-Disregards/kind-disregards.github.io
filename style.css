@@ -96,22 +96,13 @@ div#wrapper_bandphoto {
 
 div#wrapper_content {
     color: #ECDCB9;
-    margin-top:2%;
-    margin-bottom:20px;
+    margin-top:3%;
+    margin-bottom:3%;
 }
 
 div.content {
 	display:none;
 }
-
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 
 div#content {
 	max-width:630px;
@@ -207,7 +198,8 @@ footer.contact_footer {
     width:100%;
     color: #00C4C3;
     bottom: 0;
-    padding:1%;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 
 a.menu_item {
