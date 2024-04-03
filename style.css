@@ -51,6 +51,10 @@ table {
 
 
 /* GENERIC FORMATS */
+html {
+    background-color:black;
+}
+
 html, body {
 	height: 100%;
 	min-height:100%;
@@ -93,7 +97,7 @@ div#wrapper_bandphoto {
 div#wrapper_content {
     color: #ECDCB9;
     margin-top:2%;
-    margin-bottom:2%;
+    margin-bottom:20px;
 }
 
 div.content {
@@ -127,7 +131,7 @@ header#menu {
 	top:0;
 }
 
-header#hidden_menu {
+.hidden_content {
 	visibility:hidden;
 }
 
@@ -183,7 +187,7 @@ span.menu_grouping {
 	display:inline-block;
 }
 
-em#contact_footer {
+em.contact_footer {
     font-size: 14pt;
 }
 
@@ -192,15 +196,18 @@ em#kind_disregards {
     font-family:"courier new";
 }
 
-footer {
-	font-size:10pt;
-	background-color:black;
-	width:100%;
-	color: #00C4C3;
+footer#footer_block {
 	position:fixed;
-	bottom: 0;
-	padding:1%;
 	z-index:2;
+}
+
+footer.contact_footer {
+    font-size:10pt;
+    background-color:black;
+    width:100%;
+    color: #00C4C3;
+    bottom: 0;
+    padding:1%;
 }
 
 a.menu_item {
