@@ -1,20 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Kind Disregards</title>
-  <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
-  <style type="text/css">
-      <!-- CSS code here -->
-  </style>
+	<script>
+		function toggle_content(which_content) {
+			//Hide all content first
+            //DEBUG
+			//alert(which_content);
+			var content = document.getElementsByClassName("content");
+			for (var i = 0; i < content.length; i++){
+				content[i].style.display = "none";
+			}
+            
+            var navlinks = document.getElementsByClassName("menu_item");
+            for (var i = 0; i < navlinks.length; i++){
+                navlinks[i].style.textDecoration = "none";
+            }
+            
+			//Set background-color
+			//document.getElementById("wrapper_page").style.backgroundColor = "rgb(48,48,48)";
+            
+			//show the content of clicked item
+			document.getElementById(which_content).style.display = "block";
+            document.getElementById("navlink_"+which_content).style.textDecoration = "underline overline";
+		}
+	</script>
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kind Disregards is a music project from Canada. A collaboration between composers Christan Carrière and Pascal Delaquis." />
+	<title>Kind Disregards</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
 </head>
+
 <body>
-    <h1>Hello Internet,</h1>
-    <p>New project. New music. Coming soon.</p>
-    <br />
-    <p>Kind Disregards,</p>
-    <p>Christian Carrière</p>
-    <p>Pascal Delaquis</p>
+	<a name="go"></a>
+	<div id="wrapper_page">
+		<header id="menu" class="center_content">
+				<span class="menu_grouping">
+                    <a id="navlink_news" class="menu_item" href="#go" onclick="toggle_content('news')">NEWS</a
+					><a id="navlink_listen" class="menu_item" href="#go" onclick="toggle_content('listen')">LISTEN</a
+					><a id="navlink_about" class="menu_item" href="#go" onclick="toggle_content('about')">ABOUT</a
+				></span">
+		</header>
+		<header id="hidden_menu" class="center_content">
+				<span class="menu_grouping">
+					<a id="navlink_news" class="menu_item" href="#go" onclick="toggle_content('news')">NEWS</a
+					><a id="navlink_listen" class="menu_item" href="#go" onclick="toggle_content('listen')">LISTEN</a
+					><a id="navlink_about" class="menu_item" href="#go" onclick="toggle_content('about')">ABOUT</a
+				></span">
+		</header>
+		<div id="wrapper_content">
+            <div id="content">
+                
+                <!-- INITIAL CONTENT - ON FIRST PAGE LOAD -->
+                <!-- :::::::::::: NEWS :::::::::::: -->
+                <div id="news" class="content">
+                    <h2 class="center_content">Kind Disregards</h2>
+                    <h3 class="center_content">presents</h3>
+                    <h1 class="center_content">Hydenburg</h1>
+                    <img src="img/KindDisregards_Hydenburg_small.jpg" id="new_release" class="center_image" alt="Hydenburg album art" />
+                        <p class="description">
+                            In a rolling tide of pulsing beats, drips, and bubbles, <i>Hydenburg</i> is the underwater rave cheering you along your quest into a surreal world between sleep and awake. It's the mischievous voice in your head persuading you to do <i>something</i>, <i>somewhere</i>, for <i>some</i> reason.
+                            <br />
+                            <br />
+                            The single was mixed by Christian Carrière and mastered by <a href="https://thirdmanmastering.com/engineers" class="paragraph_link" target="_blank" rel="noopener noreferrer">Bill Skibbe</a> (Jack White, Black Keys).
+                            <br />
+                            Artwork by <a href="https://www.instagram.com/louisernestbois" class="paragraph_link" target="_blank" rel="noopener noreferrer">Louis-Ernest Bois</a>.
+                        </p>
+                </div>
+                
+                <!-- :::::::::::: LISTEN :::::::::::: -->
+                <div id="listen" class="content">
+                    <a href="https://bandcamp.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/bandcamp.png" /></a>
+                    <a href="https://tidal.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/tidal.png" /></a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/youtube.png" /></a>
+                    <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/apple.svg" /></a>
+                    <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/spotify.png" /></a>
+                </div>
+                
+                <!-- :::::::::::: ABOUT :::::::::::: -->
+                <div id="about" class="content">
+                    <div id="wrapper_bandphoto">
+                        <img id="band_photo" src="img/KindDisregards_BandPhoto.jpg" />
+                        <small id="photo_credit">Photo: Victoria Ho</small>
+                    </div>
+                    <p class="description"><em id="kind_disregards">Kind Disregards</em> is a Toronto-Montréal collaboration between <a href="https://www.christiancarriere.com/" class="paragraph_link" target="_blank" rel="noopener noreferrer">Christian Carrière</a> (Mutek) and <a href="http://pascaldelaquis.com" class="paragraph_link" target="_blank" rel="noopener noreferrer">Pascal Delaquis</a> (Little Scream, Elisapie). Pandemic-era call-and-response compositions sparked initial interest. But when Delaquis and Carrière finally played together in person in the summer of 2022, their palpable chemistry sparked the motto: ‘The first take is the last take‘.</p>
+                </div>
+                
+            </div>
+		</div>
+		<footer id="contact_footer" class="center_content">
+            info<em>@</em>KindDisregards.com
+		</footer>
+	</div>
 </body>
 </html>
