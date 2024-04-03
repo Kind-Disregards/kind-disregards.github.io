@@ -112,7 +112,7 @@ div#content {
 header {
 	font-size:14pt;
 	background-color:black;
-    text-underline-offset: 5px;
+    	text-underline-offset: 5px;
 	width:100%;
 	z-index:1;
 }
@@ -135,7 +135,6 @@ img#band_photo {
     border-radius: 10px;
     margin-bottom:-5px;
     width:100%;
-    opacity:90%;
 }
 
 small#photo_credit {
