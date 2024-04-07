@@ -112,7 +112,7 @@ div#content {
 header {
 	font-size:14pt;
 	background-color:black;
-    text-underline-offset: 5px;
+    	text-underline-offset: 5px;
 	width:100%;
 	z-index:1;
 }
