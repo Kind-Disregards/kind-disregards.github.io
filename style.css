@@ -8,16 +8,16 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 html {
@@ -25,27 +25,27 @@ html {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 /***********END OF FULL RESET***********/
 
@@ -56,28 +56,28 @@ html {
 }
 
 html, body {
-	height: 100%;
-	min-height:100%;
-	font-family:"Courier New", Courier, monospace;
+    height: 100%;
+    min-height:100%;
+    font-family:"Courier New", Courier, monospace;
     background-color: #2A2A2A;
 }
 
 .center_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center_content {
-	text-align:center;
+    text-align:center;
 }
 /*END OF GENERIC FORMATS */
 
 div#wrapper_page {
-	height:inherit;
-	margin:auto;
-	/* on initial load */
-	/* background-color:black; */
+    height:inherit;
+    margin:auto;
+    /* on initial load */
+    /* background-color:black; */
 }
 
 /* Initial content */
@@ -101,29 +101,29 @@ div#wrapper_content {
 }
 
 div.content {
-	display:none;
+    display:none;
 }
 
 div#content {
-	max-width:630px;
-	margin:auto;
+    max-width:630px;
+    margin:auto;
 }
 
 header {
-	font-size:14pt;
-	background-color:black;
+    font-size:14pt;
+    background-color:black;
     text-underline-offset: 5px;
-	width:100%;
-	z-index:1;
+    width:100%;
+    z-index:1;
 }
 
 header#menu {
-	position:fixed;
-	top:0;
+    position:fixed;
+    top:0;
 }
 
 .hidden_content {
-	visibility:hidden;
+    visibility:hidden;
 }
 
 img#new_release {
@@ -144,7 +144,7 @@ small#photo_credit {
 }
 
 h1 {
-	font-size:24pt;
+    font-size:24pt;
     margin-top:1%;
     margin-bottom:2%;
 }
@@ -174,7 +174,7 @@ i {
 }
 
 span.menu_grouping {
-	display:inline-block;
+    display:inline-block;
 }
 
 em.contact_footer {
@@ -188,8 +188,8 @@ em#kind_disregards {
 }
 
 footer#footer_block {
-	position:fixed;
-	z-index:2;
+    position:fixed;
+    z-index:2;
 }
 
 footer.contact_footer {
@@ -203,16 +203,16 @@ footer.contact_footer {
 }
 
 a.menu_item {
-	display:inline-block;
+    display:inline-block;
     color: #00C4C3;
-	min-width:105px;
+    min-width:105px;
     font-weight: bold;
-	padding:20px 0 20px /* top horizontal bottom */
+    padding:20px 0 20px /* top horizontal bottom */
 }
 
 /* MENU NAV LINKS */
 a.menu_item:link {
-	text-decoration:none;
+    text-decoration:none;
     color: #00C4C3;
 }
 
@@ -264,11 +264,14 @@ a.paragraph_link:visited {
     }
 }
 
-/* STREAM LINKS */
-a.stream_link:hover {
-    background-color: #BD4E3A;
+a.paragraph_link:active {
+    color: #FF6025;
+    /*color: #0437F2;*/
+    /*color: black;*/
+    text-decoration:none;
 }
 
+/* STREAM LINKS */
 a.stream_link {
     display:block;
     border-style:solid;
@@ -287,3 +290,20 @@ a.stream_link {
     margin-top:2%;
     margin-bottom:2%;
 }
+
+a.stream_link:link {
+    background-color: #1E1E1E;
+}
+
+a.stream_link:visited {
+    background-color: #1E1E1E;
+}
+
+a.stream_link:hover {
+    background-color: #BD4E3A;
+}
+
+a.stream_link:active {
+    background-color: #BD4E3A;
+}
+
