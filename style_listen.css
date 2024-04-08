@@ -90,7 +90,7 @@ div#wrapper_content {
 div#content {
 	max-width:630px;
 	margin:auto;
-    padding-top:1%;
+    padding-top:2%;
 }
 
 header {
@@ -98,8 +98,8 @@ header {
 	background-color:black;
     text-underline-offset: 5px;
 	width:100%;
-    padding-top:1%;
-    padding-bottom:1%;
+    padding-top:2%;
+    padding-bottom:2%;
     z-index:1;
 }
 
@@ -258,11 +258,15 @@ a.paragraph_link:visited {
     }
 }
 
-/* STREAM LINKS */
-a.stream_link:hover {
-    background-color: #BD4E3A;
+a.paragraph_link:active {
+    color: #FF6025;
+    /*color: #0437F2;*/
+    /*color: black;*/
+    text-decoration:none;
 }
 
+
+/* STREAM LINKS */
 a.stream_link {
     display:block;
     border-style:solid;
@@ -280,4 +284,20 @@ a.stream_link {
     margin-right:auto;
     margin-top:2%;
     margin-bottom:2%;
+}
+
+a.stream_link:link {
+    background-color: #1E1E1E;
+}
+
+a.stream_link:visited {
+    background-color: #1E1E1E;
+}
+
+a.stream_link:hover {
+    background-color: #BD4E3A;
+}
+
+a.stream_link:active {
+    background-color: #BD4E3A;
 }
