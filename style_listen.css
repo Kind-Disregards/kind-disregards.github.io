@@ -90,7 +90,7 @@ div#wrapper_content {
 div#content {
 	max-width:630px;
 	margin:auto;
-    padding-top:2%;
+    margin-top:1%;
 }
 
 header {
@@ -118,7 +118,7 @@ img#new_release {
 }
 
 img#stream_new_release {
-    max-width:24%;
+    max-width:35%;
     border-radius: 3px;
 }
 
