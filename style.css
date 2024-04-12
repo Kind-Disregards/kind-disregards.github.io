@@ -227,7 +227,8 @@ a.menu_item {
     display:inline-block;
     color: #00C4C3;
     /*min-width:105px;*/
-    min-width:90px;
+    width:25vw;
+    max-width:105px;
     font-weight: bold;
     padding:20px 0 20px /* top horizontal bottom */
 }
