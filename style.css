@@ -182,6 +182,7 @@ span.menu_grouping {
 
 em.contact_footer {
     font-size: 14pt;
+    color:#FF6025;
 }
 
 em#kind_disregards {
@@ -193,7 +194,7 @@ em#kind_disregards {
 
 em#date_available {
     color: #d4c5a5;
-    font-size:11pt;
+    font-size:10pt;
     font-family:Garamond;
     margin-top:3%;
     margin-bottom:1%;
@@ -213,7 +214,7 @@ footer#footer_block {
 }
 
 footer.contact_footer {
-    font-size:10pt;
+    font-size:11pt;
     background-color:black;
     width:100%;
     color: #00C4C3;
