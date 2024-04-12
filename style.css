@@ -226,7 +226,8 @@ footer.contact_footer {
 a.menu_item {
     display:inline-block;
     color: #00C4C3;
-    min-width:105px;
+    /*min-width:105px;*/
+    min-width:90px;
     font-weight: bold;
     padding:20px 0 20px /* top horizontal bottom */
 }
