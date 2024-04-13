@@ -90,7 +90,7 @@ div#wrapper_content {
 div#content {
 	max-width:630px;
 	margin:auto;
-    	margin-top:12px;
+    margin-top:2vh;
 }
 
 header {
@@ -282,7 +282,7 @@ a.stream_link {
     max-width:250px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:2%;
+    margin-top:2vh;
     margin-bottom:2%;
 }
 
