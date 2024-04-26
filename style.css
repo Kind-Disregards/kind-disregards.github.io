@@ -127,7 +127,8 @@ header#menu {
 }
 
 img#new_release {
-    max-width:45%;
+    width:45%;
+    max-width:250px;
     border-radius: 3px;
 }
 
