@@ -261,7 +261,8 @@ a.menu_item:active {
 }
 
 img.stream_link {
-    max-height:30px;
+    height:30px;
+    padding-left:4px;
 }
 
 /* PARAGRAPH LINKS */
