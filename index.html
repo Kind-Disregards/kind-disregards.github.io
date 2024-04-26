@@ -1,126 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="shortcut icon" href="img/FAVICON_Hydenburg_192.png" type="image/x-icon" />
-        <link rel="icon" href="img/FAVICON_Hydenburg_192.png" type="image/ico" />
-        <link rel="icon" href="img/FAVICON_Hydenburg_192.png" type="image/png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="img/FAVICON_Hydenburg_180.png" />
-        <script>
-            function toggle_content(which_content) {
-                //Hide all content first
-                //DEBUG
-                //alert(which_content);
-                var content = document.getElementsByClassName("content");
-                for (var i = 0; i < content.length; i++){
-                    content[i].style.display = "none";
-                }
-                
-                var navlinks = document.getElementsByClassName("menu_item");
-                for (var i = 0; i < navlinks.length; i++){
-                    navlinks[i].style.textDecoration = "none";
-                }
-                
-                //Set background-color
-                //document.getElementById("wrapper_page").style.backgroundColor = "rgb(48,48,48)";
-                
-                //show the content of clicked item
-                document.getElementById(which_content).style.display = "block";
-                document.getElementById("navlink_"+which_content).style.textDecoration = "underline overline";
-            }
-        </script>
-        <noscript>Sorry, your browser does not support JavaScript!</noscript>
-        
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Kind Disregards is a music project from Canada. The band consists of multi-instrumentalists Christan Carrière and Pascal Delaquis." />
-        <title>Kind Disregards</title>
-                    
-        <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
-    </head>
-    
-    <body>
-        <a name="go"></a>
-        <div id="wrapper_page">
-            <header id="menu" class="center_content">
-                <span class="menu_grouping">
-                    <a id="navlink_news" class="menu_item" href="#go" onclick="toggle_content('news')">NEWS</a
-                    ><a id="navlink_listen" class="menu_item" href="#go" onclick="toggle_content('listen')">PLAY</a
-                ></span
-                ><span class="menu_grouping"
-                    ><a id="navlink_listen" class="menu_item" href="https://kinddisregards.bandcamp.com/track/hydenburg" target="_blank" rel="noopener noreferrer">BUY<em class="external_link">↗</em></a
-                    ><a id="navlink_about" class="menu_item" href="#go" onclick="toggle_content('about')">ABOUT</a
-                ></span>
-            </header>
-            <header id="hidden_menu" class="center_content hidden_content">
-                <span class="menu_grouping">
-                    <a class="menu_item" href="#go" onclick="toggle_content('news')">NEWS</a
-                    ><a class="menu_item" href="#go" onclick="toggle_content('listen')">PLAY</a
-                    ></span
-                ><span class="menu_grouping"
-                    ><a class="menu_item" href="https://kinddisregards.bandcamp.com/track/hydenburg" target="_blank" rel="noopener noreferrer">BUY<em class="external_link">↗</em></a
-                    ><a class="menu_item" href="#go" onclick="toggle_content('about')">ABOUT</a
-                ></span>
-            </header>
-            <div id="wrapper_content">
-                <div id="content">
-                    
-                    <!-- INITIAL CONTENT - ON FIRST PAGE LOAD -->
-                    <!-- :::::::::::: NEWS :::::::::::: -->
-                    <div id="news" class="content">
-                        <h2 class="center_content">Kind Disregards</h2>
-                        <h3 class="center_content">DEBUT SINGLE</h3>
-                        <h1 class="center_content">- Hydenburg -</h1>
-                        <img src="img/KindDisregards_Hydenburg_small.jpeg" id="new_release" class="center_image" alt="Hydenburg album art" />
-                        <p class="description">
-                        In a rolling tide of drones, drips, and sonic bubbles, Hydenburg is the underwater rave cheering you along your quest into a surreal world between asleep and awake. It's the mischievous voice in your head enticing you to do <i>something</i> ... <i>somewhere</i>.
-                        </p>
-                        <p class="description">
-                        Mastered by <a href="https://thirdmanmastering.com/engineers" class="paragraph_link" target="_blank" rel="noopener noreferrer">Bill Skibbe</a>
-                        <br />
-                        Artwork by <a href="https://www.instagram.com/louisernestbois" class="paragraph_link" target="_blank" rel="noopener noreferrer">Louis-Ernest Bois</a>
-                        </p>
-                        <iframe style="border: 0; width: 97%; height: 42px; display: block; margin-left: auto; margin-right: auto; margin-top: 3%;" src="https://bandcamp.com/EmbeddedPlayer/track=937382411/size=small/bgcol=333333/linkcol=00C4C3/artwork=none/transparent=true/" seamless><a href="https://kinddisregards.bandcamp.com/track/hydenburg">Hydenburg by Kind Disregards</a></iframe>
-                    </div>
-                    
-                    <!-- :::::::::::: LISTEN :::::::::::: -->
-                    <div id="listen" class="content">
-                        <a href="https://kinddisregards.bandcamp.com/track/hydenburg" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/bandcamp.png" /></a>
-                        <em id="date_available" class="center_content">Available on all platforms April 26, 2024</em>
-                        <!--
-                         <a href="https://tidal.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/tidal.png" /></a>
-                         <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/youtube.png" /></a>
-                         <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/apple.svg" /></a>
-                         <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/spotify.png" /></a>
-                         -->
-                    </div>
-                    
-                    <!-- :::::::::::: ABOUT :::::::::::: -->
-                    <div id="about" class="content">
-                        <div id="wrapper_bandphoto">
-                            <img id="band_photo" src="img/KindDisregards_BandPhoto.jpg" />
-                            <small id="photo_credit">Photo: V.Ho</small>
-                        </div>
-                        <p class="description">
-                            <em id="kind_disregards">Kind Disregards</em> is a long-distance collaboration between multi-instrumentalists <a href="https://www.christiancarriere.com/" class="paragraph_link" target="_blank" rel="noopener noreferrer">Christian Carrière</a> (Montréal) and <a href="http://pascaldelaquis.com" class="paragraph_link" target="_blank" rel="noopener noreferrer">Pascal Delaquis</a> (Toronto). Borne out of a process of call-and-response composition, the project continues to evolve by embracing the raw energy that animates initial impulses. "Don't overthink it!"
-                        </p>
-                        <p class="description">
-                            At his core, <a href="http://pascaldelaquis.com" class="paragraph_link" target="_blank" rel="noopener noreferrer">Pascal</a> is a drummer with a passion for percussive textures and deep grooves. He learned on pots and pans; a practice that has evolved into his present-day inquiries in tone and sound. His musical expressions have been captured in both live performance and studio recordings, and shared in the worlds of contemporary dance, theatre, and film.
-                        </p>
-                        <p class="description">
-                            <a href="https://www.christiancarriere.com/" class="paragraph_link" target="_blank" rel="noopener noreferrer">Christian</a> is a sound artist and musician who’s work lives in the dreamy grey zone between sound design, soundscape and music. His pieces have been broadcast on CBC, BBC3 and Radio-Canada, among others. He has released several albums and singles, both as a solo artist and with collaborators. His sound installations have been shown in galleries and museums in Canada, the UK, Denmark, and Turkey.
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-            <footer class="center_content contact_footer hidden_content">
-                info<em class="contact_footer">@</em>KindDisregards.com
-            </footer>
-            <footer id="footer_block" class="center_content contact_footer">
-                info<em class="contact_footer">@</em>KindDisregards.com
-            </footer>
-            
+<head>
+    <link rel="shortcut icon" href="img/FAVICON_Hydenburg_192.png" type="image/x-icon" />
+    <link rel="icon" href="img/FAVICON_Hydenburg_192.png" type="image/ico" />
+    <link rel="icon" href="img/FAVICON_Hydenburg_192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="img/FAVICON_Hydenburg_180.png" />
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Kind Disregards</title>
+	
+	<link rel="stylesheet" href="style_play.css" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+    <header id="menu">
+        <h1 class="center_content">Hydenburg</h1>
+        <h3 class="center_content">by</h3>
+        <h2 class="center_content">Kind Disregards</h2>
+    </header>
+    <header id="hidden_menu" class="hidden_content">
+        <h1 class="center_content">Hydenburg</h1>
+        <h3 class="center_content">by</h3>
+        <h2 class="center_content">Kind Disregards</h2>
+    </header>
+    <div id="content">
+        <!-- :::::::::::: LISTEN :::::::::::: -->
+        <div id="listen">
+            <img src="img/KindDisregards_Hydenburg_small.jpeg" id="stream_new_release" class="center_image" alt="Hydenburg album art" />
+            <a href="https://kinddisregards.bandcamp.com/track/hydenburg" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/bandcamp.png" /></a>
+            <!--<p class="description center_content">Available on all platforms April 26, 2024</p>-->
+            <a href="https://tidal.com/browse/track/356730809" target="_blank" rel="noopener noreferrer" class="stream_link"><img style="height:20px; padding-top:5px; padding-bottom:5px;" class="stream_link" src="img/tidal.png" /></a>
+            <a href="https://music.apple.com/us/album/hydenburg/1740747631?i=1740747633" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/apple.svg" /></a>
+            <a href="https://open.spotify.com/track/0uF7qmQ6ip7aQBhLh2aERB?si=58d66c1e6a4649b4" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/spotify.png" /></a>
+            <a href="https://www.youtube.com/watch?v=PwEo35uX3Uc" target="_blank" rel="noopener noreferrer" class="stream_link"><img style="height:24px; padding-top:3px; padding-bottom:3px;" class="stream_link" src="img/youtube.png" /></a>
+            <a href="https://music.youtube.com/watch?v=PwEo35uX3Uc&feature=shared" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/youtube_music.png" /></a>
+            <a href="https://music.amazon.com/albums/B0D1FTTQ3S?trackAsin=B0D1G5JMFF&do=play" target="_blank" rel="noopener noreferrer" class="stream_link"><img class="stream_link" src="img/amazon_music.png" /></a>
+             -->
         </div>
-    </body>
+    </div>
+</body>
 </html>
