@@ -90,7 +90,8 @@ div#wrapper_bandphoto {
     max-width:50%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #BD4E3A;
+    /*background-color: #BD4E3A;*/
+    background-color: #1E1E1E;
     border-radius: 10px;
 }
 
@@ -140,9 +141,10 @@ img#band_photo {
 
 small#photo_credit {
     font-size:8pt;
+    color: #999999;
     /*color:#FFECCA;*/
-    color: #232323;
-    font-weight:bold;
+    /*color: #232323;*/
+    /*font-weight:bold;*/
     padding-left:3%;
 }
 
@@ -187,8 +189,9 @@ em.contact_footer {
 }
 
 em#kind_disregards {
-    color: #ECDCB9;
+    /*color: #ECDCB9;*/
     /*color: #BD4E3A;*/
+    color: #FF6025;
     font-size: 26pt;
     font-family: "Courier New", Courier, monospace;
 }
@@ -331,4 +334,3 @@ a.stream_link:hover {
 a.stream_link:active {
     background-color: #BD4E3A;
 }
-
