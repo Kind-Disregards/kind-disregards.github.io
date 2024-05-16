@@ -189,9 +189,9 @@ em.contact_footer {
 }
 
 em#kind_disregards {
-    /*color: #ECDCB9;*/
+    color: #ECDCB9;
     /*color: #BD4E3A;*/
-    color: #FF6025;
+    /*color: #FF6025;*/
     font-size: 26pt;
     font-family: "Courier New", Courier, monospace;
 }
